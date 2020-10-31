@@ -1,0 +1,56 @@
+.bx-system-auth-form form {
+   display: inline-block;
+   text-align: left;
+   float: left;
+   font: 14px arial;
+}
+
+.bx-system-auth-table {
+   font: 20px arial;
+   text-align: right;
+}
+
+.bx-system-auth-table input{
+   margin: 10px 0px 10px 0px;
+   width: 280px;
+}
+
+.bx-system-auth-table td.td3{
+   margin: 0px;
+   padding: 0px;
+}
+
+.submitButton {
+   background: transparent;
+   border: medium none currentColor;
+   cursor: pointer;
+   font: 700 24px "arial";
+   height: 30px;
+   margin: 20px 100px 0px 70px;
+   padding: 0px;
+   position: relative;
+   width: 90px;
+}
+
+.blkEye {
+   width: 39px;
+   height: 39px;
+   cursor: pointer;
+   position: relative;
+   float: none;
+   margin: 0px 0px 0px 5px;
+   padding: 0px;
+   top: 12px;
+}
+
+#eyeOpen {
+   background: url("eye_open.png") no-repeat 50% 50%;
+   background-size: contain;
+   display: none;
+}
+
+#eyeClosed {
+   background: url("eye_closed.png") no-repeat 50% 50%;
+   background-size: contain;
+}
+

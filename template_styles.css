@@ -1,0 +1,1144 @@
+@font-face {
+    font-family: yanone;
+    src: url("");
+   }
+
+   
+   html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header,
+hgroup, nav, section, menu,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+html {
+   height:100%;
+   -webkit-font-smoothing: antialiased;
+   overflow-y: scroll;
+}
+
+body {
+   /*height:100%;*/
+   color:#999;
+   background:#e8e8e8;
+   text-align:center;
+   font-family:Verdana, Geneva, sans-serif;
+   font-size:13px;
+   font:small sans-serif;
+   line-height:1.3em
+}
+
+table { font-size:inherit; }
+select, input, textarea { font:99% sans-serif; }
+body, select, input, textarea { color:#000; }
+
+h1 {
+   font: 32px arial;
+   line-height: 110%;
+/*   margin: 25px 0px 10px 0px;*/
+   padding: 25px 0px 10px 0px;
+   font-weight:normal;
+   text-align: center;
+   color: #000;
+   text-transform: uppercase;
+   /*background-color: #fff;*/
+   background: transparent;
+}
+
+h2 { font-size:184.6%/*199.99%*/;line-height:120%;font-weight:normal;margin:1.67em 0 0.8em 0;}
+h3 { font-size:138%/*148%*/; margin: 2.58em 0 1em 0;}
+h4 { font-size: 123.07%; margin:1.5em 0 0.3em 0;}
+h5 {color: red; font: 18px arial; font-weight: bold; text-align: left; margin: 15px 0px 5px 0px;}
+h6 { color:#999; font-size: 107.69%;        margin:1.5em 0 0.2em; padding-bottom:0; }
+
+
+
+header {
+   /*height: 308px;*/
+   height: 218px;
+}
+
+
+#backgroundImageContainer {
+   position:relative;
+   z-index:1;
+   height:315px;
+   overflow:hidden;
+   min-width:940px;
+   line-height:100%;
+   background-color: #e8e8e8;
+}
+
+#headerBody {
+   bottom:290px;
+   padding:0;
+   left:0%;
+   width:920px;
+   margin:0 auto;
+   text-align:left;
+   position:relative;
+   z-index:12;
+   height: 105px;
+}
+
+#headerBody img {
+   border:0;
+   vertical-align:middle;
+   width: 450px;
+}
+
+#headerBody img.headerLogo {
+   border:0;
+   vertical-align:middle;
+   height: 130px;
+   width: 130px;
+}
+
+#searchContainer {
+   position: absolute;
+   top: 80px;
+   left: 530px;
+   height: 35px;
+   width: 400px;
+/*   border: 1px solid grey;*/
+   border: none;
+}
+
+#authContainer {
+   position: absolute;
+   top: 0px;
+   left: 530px;
+   height: 78px;
+   width: 400px;
+   z-index: 11;
+   overflow: hidden;
+/*   color: #fff;*/
+   color: #4c4c4c;
+   font: 16px arial;
+   vertical-align: baseline;
+   text-align: center;
+}
+
+#authContainer a {
+   color: #4c4c4c;
+   font: 14px arial;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.authRef {
+   color: #FFFFFF;
+   cursor: pointer;
+   font: 15px "arial";
+   height: 18px;
+   position: relative;
+   text-align: left;
+   text-decoration: none;
+   width: auto;
+   margin: 0px 15px 0px 13px;
+   float: left;
+}
+
+.authUserGreeting {
+   height: 25px;
+   width: 100%;
+   overflow: hidden;
+   text-align: left;
+}
+
+.authErrorMsg {
+   font: 14px arial;
+   color: red;
+   position: relative;
+   width: 100%;
+   height: auto;
+   }
+
+.authNoteMsg {
+   font: 14px arial;
+   position: relative;
+   width: 100%;
+   height: auto;
+   }
+
+.authPersonal {
+   height: 30px;
+   float: left;
+   left: 0px;
+   top: 35px;
+   position: absolute;
+   width: 125px;
+   line-height:2.0em;
+}
+
+.authPersonal img {
+   height: 28px;
+   float: left;
+   width: auto !important ;
+}
+
+.authCart {
+   height: 30px;
+   float: left;
+   left: 143px;
+   top: 35px;
+   position: absolute;
+   width: 180px;
+   border-left: 1px solid white;
+   border-right: 1px solid white;
+   line-height:2.0em;
+}
+
+.authCart img {
+   width: 35px !important;
+   margin: 0px 0px 0px 12px;
+}
+
+.noauthCart {
+   height: 30px;
+   float: left;
+   left: 0px;
+   top: 35px;
+   position: absolute;
+   width: 180px;
+   line-height:2.0em;
+}
+
+.cartCounter {
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   background: transparent;
+   top: 3px;
+   right: 32px;
+   padding: 0px;
+   margin: 0px;
+   font: 11px arial;
+}
+
+.noauthCart img {
+   width: 35px !important;
+   margin: 0px 0px 0px 12px;
+}
+
+.authExit {
+   height: 30px;
+   float: left;
+   left: 345px;
+   top: 35px;
+   position: absolute;
+   width: 50px;
+   line-height:2.0em;
+}
+
+
+/* ============ Модальные окна авторизации - регистрации, всплывающее окно с ТТ ============= */
+#modalOverlay {
+   background:transparent url("overlay.png") repeat top left;
+   position:fixed;
+   top:0px;
+   bottom:0px;
+   left:0px;
+   right:0px;
+   z-index:1000;
+}
+
+.modalBox {
+   position:fixed;
+   top:-500px;
+   left: 0px;
+   background-color:#fff;
+   color:#000;
+   padding:50px;
+   width: 500px;
+   height: auto;
+   overflow: hidden;
+   z-index:1001;
+}
+
+#modalDealerInfo {
+   width: 570px;
+   height: 470px;
+   border: 1px #000 solid;
+   background: #e8e8e8;
+   position: fixed;
+   display: none;
+   opacity: 0;
+   z-index: 9600;
+   overflow: hidden;
+}
+
+.modalClose {
+   width:25px;
+   height:25px;
+   background:transparent url("closemodal.png") no-repeat top left;
+   background-size: 100%;
+   position: absolute;
+   top: 17px;
+   right: 8px;
+   z-index: 1002;
+   cursor: pointer;
+}
+
+.modalHeader {
+   font: 32px arial;
+   font-weight: bold;
+   position: relative;
+   margin: 0px 0px 20px 0px;
+   width: 100%;
+   float: left;
+}
+
+.modalContent {
+   width: 100%;
+   position: relative;
+   float: left;
+   font: 14px arial;
+   text-align: left;
+   line-height: 160%;
+}
+
+.modalContent .calcLeftPanel {
+   width: 200px;
+   height: auto;
+   float: left;
+   position: relative;
+}
+
+.modalContent h3 {
+   font: 12px arial;
+   font-weight: 700;
+   text-align: center;
+   padding: 0px;
+   margin: 10px 0px 10px 0px;
+   text-transform: uppercase;
+}
+
+.modalContent .calcLeftPanel img {
+   width: 150px;
+   margin: 0px 0px 10px 20px;
+   border: 1px solid #eee;
+}
+
+.modalContent .calcLeftPanel table {
+   font: 12px arial;
+   margin: 0px;
+   padding: 0px;
+   width: 170px;
+   margin: 0px 0px 0px 10px;
+   border-collapse: collapse;
+}
+
+.modalContent .calcRightPanel table {
+   font: 14px arial;
+   margin: 0px;
+   padding: 0px;
+   width: 200px;
+   margin: 0px 0px 0px 44px;
+   border-collapse: collapse;
+}
+
+.modalContent table .td2 {
+   text-align: right;
+}
+
+.modalContent table .odd {
+   background-color: #eee;
+}
+
+.modalContent table .even {
+   background-color: #fff;
+}
+
+.modalContent .calcRightPanel {
+   width: 290px;
+   height: auto;
+   float: right;
+   position: relative;
+}
+
+#modalCart input {
+    font-size: 16px;
+    padding: 1px 0px;
+    background-color: white;
+    border: 2px inset;
+    border-color: #eeeeee;
+    border-collapse: separate;
+    cursor: auto;
+    /*margin: 0px 10px 10px 0px;*/
+    text-indent: 0px;
+    text-shadow: none;
+    margin: 0px 0px 0px 107px;
+}
+
+#modalCart input.m2 {
+    width: 120px;
+}
+
+#modalCart input.sht {
+/*    width: 60px; */
+   width: 120px;
+}
+
+#modalCart .addItemButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font: 700 24px "arial";
+    height: 30px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    position: relative;
+    width: auto;
+
+}
+
+
+.personalContent {
+   height: auto;
+   float: left;
+   width: 940px;
+   position: relative;
+   margin: 0px 0px 80px 0px;
+   display: block;
+   min-height: 200px;
+}
+
+.personalContent p {
+   font: 16px arial;
+   margin: 10px;
+}
+
+
+#advBanner {
+   position:relative;
+   width:940px;
+   z-index:10;
+   left: 0%;
+   margin:0 auto;
+   bottom: 250px;
+   height: 70px;
+   padding: 10px;
+   font: 16px arial;
+   font-weight: bold;
+   letter-spacing: 1px;
+   /*color: #8b77b6;*/
+   color: red;
+   background: #f5f5f5;
+}
+
+#mainBanner {
+   position:relative;
+   width:940px;
+   z-index:10;
+   left: 0%;
+   margin:0 auto;
+   bottom: 250px;
+   height: 50px;
+   font: 14px arial;
+   font-weight: bold;
+   letter-spacing: 1px;
+   /*color: #8b77b6;*/
+   color: red;
+   background: #f5f5f5;
+}
+
+#mainMenuContainer {
+   position:relative;
+   width:940px;
+   z-index:10;
+   left: 0%;
+   margin:0 auto;
+   bottom: 250px;
+   height: 40px;
+   }
+
+
+#mainMenuUnderline {
+   position: relative;
+   width: 940px;
+   bottom: 250px;
+   background: #8b77b6;
+   height: 8px;
+   left: 0%;
+   margin:0 auto;
+   z-index: 1;
+}
+
+
+
+
+#pageContainer {
+   background: #e8e8e8;
+   padding-bottom: 25px;
+   position: relative;
+   z-index: 1;
+}
+
+#pageBody {
+   text-align: left;
+   width: 940px;
+   left: 0%;
+   margin: 0 auto;
+/*   margin-top: -250px;*/
+   padding: 0px;
+   background: #e8e8e8;
+   position: relative;
+   z-index: 1;
+/*   min-height: 400px; */
+}
+
+
+#about_text {
+   font: 17px arial;
+   text-align: left;
+   width: 940px;
+   height: auto;
+   display: block;
+   float: left;
+   margin: 0px 0px 50px 0px;
+}
+
+#about_text .p1 {
+   margin: 0px 0px 15px 0px;
+   font: 22px arial;
+}
+
+#about_text p {
+   margin: 0px 0px 15px 18px;
+}
+
+#about_text ul {
+   margin: 0px 0px 15px 18px;
+   list-style: none;
+}
+
+
+#bottomDivider {
+   width: 940px;
+   position: relative;
+   height: 25px;
+   background: url("") no-repeat;
+   float: left;
+   z-index: 5;
+   clear: both;
+   margin: 0px 0px 0px 0px;
+}
+
+
+
+#newscontainer_button {
+   position: absolute;
+   top: -34px;
+   left: 433px;
+   width: 72px;
+   height: 72px;
+   z-index: 10;
+/*   background: url(images/circle-open.png) no-repeat;*/
+   float: none;
+   cursor: pointer;
+}
+
+#newscontainer {
+   width: 940px;
+   overflow: hidden;
+   height: 0px;
+   position: relative;
+/*   border-bottom: 1px solid grey;*/
+   z-index: 4;
+   margin: 15px 0px 0px 0px;
+   background-color: #f1f1f2;
+/*   display: none;*/
+}
+
+#newscontainer h1 {
+   text-align: center;
+   color: #ec1b23;
+   font: 32px arial;
+   font-weight: bold;
+   margin: 0px;
+   text-transform: none;
+}
+
+
+
+
+#bottomPictoContainer {
+   width: 940px;
+   min-height: 190px;
+   position: relative;
+   display: block;
+   float: left;
+   margin: 50px 0px 0px 0px;
+}
+
+#bottomPictoContainer .pictoBox {
+   width: 160px;
+   color: #000;
+   font: 14px arial;
+   text-align: left;
+   position: relative;
+   float: left;
+   margin: 0px 130px 0px 70px;
+}
+
+#bottomPictoContainer .last {
+   margin: 0px 0px 0px 60px;
+}
+
+
+.pictoBox img {
+   width: 85px;
+   margin: 0px 80px 10px 0px;
+}
+
+.pictoBox h2 {
+   font: 18px arial;
+   font-weight: bold;
+   margin: 0px 0px 3px 0px;
+   text-align: left;
+   color: #000;
+}
+
+
+
+
+
+#footerContainer {
+   background: #e8e8e8;
+   position: relative;
+   margin-top: 240px;
+}
+
+#footerBody {
+   font: 11px arial;
+   text-align: left;
+   width: 940px;
+   left: 0%;
+   margin: 0px auto 0px auto;
+   padding: 0px;
+   background: #a09997;
+   position: relative;
+   z-index: 10;
+   height: 155px;
+   border-top: 1px solid #a09997;
+   color: #cfcccb;
+}
+
+#footerOfficeBlock {
+   position: relative;
+   float: left;
+   height: 75px;
+   width: 435px;
+   margin: 0px 0px 0px 35px;
+   padding: 15px 0px 10px 0px;
+}
+
+#footerSkladBlock {
+   position: relative;
+   float: left;
+   height: 75px;
+   width: 350px;
+   margin: 0px 0px 0px 70px;
+   padding: 15px 0px 10px 0px;
+}
+
+
+#footerMenuContainer {
+   height: 45px;
+   background: #7d7571;
+   margin-top: 110px;
+}
+
+.footerMetaMenu {
+   text-align:left;
+}
+
+.footerMetaMenu li {
+   display:inline;
+   display:-moz-inline-box;
+   display:inline-block;
+   margin:13px 10px 0px 61px;
+   padding:0px;
+/*   border-right:1px solid #666;*/
+}
+
+.footerMetaMenu li.first {
+   margin-left:55px;
+}
+
+.footerMetaMenu li.last {
+   margin-left:340px;
+   border-right:none;
+}
+
+
+.footerMetaMenu a, .footerMetaMenu a:visited {
+   text-decoration:none;
+   color:  #cfcccb;
+}
+
+.footerMetaMenu a:hover, .footerMetaMenu a:active, .footerMetaMenu a:focus {
+   color:#fff;
+}
+
+#counter_LI {
+   position: absolute;
+   top: 118px;
+   right: 140px;
+   width: 88px;
+   height: 31px;
+}
+
+#counter_Yandex {
+   position: absolute;
+   top: 118px;
+   right: 25px;
+   width: 88px;
+   height: 31px;
+}
+
+
+
+.contactContainer {
+   /*width: 417px;*/
+   width: 89%;
+   position: relative;
+   float: left;
+   margin: 10px 0px 0px 50px;
+   height: auto;
+   padding-bottom: 10px;
+}
+
+.contactContainer h2 {
+   font-family:Trebuchet MS;
+   font: 25px arial;
+   font-weight: bold;
+   margin: 10px 0px 10px 0px;
+   text-align: left;
+   color: #8b77b6;
+   border-bottom: 1px solid #8b77b6;
+   padding: 0px 0px 5px 0px;
+}
+
+.contactContainer p {
+   font: 12px arial;
+   text-align: left;
+   margin: 5px 0px 0px 0px;
+}
+
+.servicesContainer {
+   position: relative;
+   width: 100%;
+   text-align: justify;
+   min-height: 200px;
+   margin: 0px 0px 50px 0px;
+}
+
+.servicesContainer p {
+   font: 15px arial;
+   text-indent: 10px;
+   margin: 5px 3px 0px 3px;
+}
+
+.servicesContainer a, .servicesContainer a:visited {
+   color: #777;
+   font-weight: bold;
+}
+
+
+.servicesContainer table {
+   border-collapse: collapse;
+}
+
+.servicesContainer table th {
+   border: 1px solid;
+   text-align: center;
+   font-weight: bold;
+   padding: 10px;
+}
+
+.servicesContainer table td {
+   border: 1px solid;
+   text-align: left;
+   padding: 10px;
+}
+
+
+
+
+/*===================  Всплывающее окно с вариантами 3D-дизайнов  ============================================*/
+
+#order3DContainer {
+   width: 198px;
+   height: 0px;
+   position: absolute;
+   z-index: 11;
+   top: 450px;
+   left: 680px;
+   background: #ffd990;
+   padding: 0px;
+   display: block;
+   overflow: hidden;
+   font: 14px arial;
+}
+
+#ready3DContainer {
+   width: 218px;
+   height: auto;
+   position: absolute;
+   z-index: 11;
+   top: 450px;
+   left: 680px;
+   background: #ffd990;
+   padding: 7px 0px 7px 0px;
+   display: none;
+   overflow: hidden;
+}
+
+#ready3DContainer ul {
+   padding: 2px 10px 2px 10px;
+   height: 20px;
+   width: 100%;
+   font: 16px arial;
+   cursor: pointer;
+   color: black;
+}
+
+#ready3DContainer ul:hover {
+   background: #565656;
+}
+
+#orderRomb1 {
+   width: 218px;
+   height: 82px;
+   position: absolute;
+   z-index: 11;
+   top: 368px;
+   left: 680px;
+   background: url("") no-repeat;
+}
+
+
+#orderRomb2 {
+   width: 218px;
+   height: 82px;
+   position: absolute;
+   z-index: 11;
+   top: 368px;
+   left: 680px;
+   background: url("") no-repeat;
+   cursor: pointer;
+}
+
+
+
+#intr_Overlay {
+   background:transparent url("overlay.png") repeat top left;
+   position:fixed;
+   top:0px;
+   bottom:0px;
+   left:0px;
+   right:0px;
+   z-index:1000;
+}
+
+#intr_Box {
+   position:fixed;
+   top: 0px;
+   left: -1000px;
+   background-color:#fff;
+   color:#000;
+   padding:0px;
+   width: 930px;
+   height: 550px;
+   overflow: hidden;
+   z-index:1001;
+}
+
+#intr_Box .close
+   {
+   margin: 3px 0px 0px 907px;
+   position: absolute;
+   }
+
+#intr_Box .close img
+   {
+   width: 20px;
+   }
+
+.intr_imgBlock
+   {
+   min-height: 400px;
+   height: 400px;
+   width: 670px;
+   padding: 0px;
+   float: left;
+   position: relative;
+   top: 0px;
+   margin: 17px 0px 15px 0px;
+   overflow: hidden;
+   font: 5px Arial;
+   }
+
+.intr_previmg
+   {
+   width: 160px;
+   margin: 0px;
+   position: relative;
+   float: left;
+   padding: 5px;
+   }
+
+.intr_previmg img
+   {
+   height: 125px;
+   margin: 0px 0px 5px 0px;
+   cursor: pointer;
+   }
+
+.intr_previmg img:hover
+   {
+   opacity:0.8;
+   filter: alpha(opacity=80);
+   }
+
+.intr_fullimg
+   {
+   width: 490px;
+   min-width: 490px;
+   position: relative;
+   float: right;
+   padding: 5px;
+   }
+
+.intr_fullimg img
+   {
+   height: 390px;
+   }
+
+.intr_specsBlock
+   {
+   width: 250px;
+   padding: 0px;
+   float: right;
+   position: relative;
+   top: 0px;
+   /*min-height: 300px;*/
+   /*height: 400px;*/
+   font: 13px Arial;
+   margin: 21px 0px 0px 0px;
+   }
+
+.intr_specsBlock h2
+   {
+   margin: 0px;
+   }
+
+
+.intr_dnl3dBlock
+   {
+   position: relative;
+   width: 250px;
+   margin: 0px 0px 0px 0px;
+   padding: 5px;
+   font: 13px Arial;
+   float: right;
+   }
+
+.intr_dnljpgBlock
+   {
+   position: relative;
+   width: 420px;
+   margin: 0px 0px 0px 0px;
+   padding: 5px;
+   font: 14px Arial;
+   float: left;
+   height: 20px;
+   }
+
+.intr_zayavkaBlock
+   {
+   position: relative;
+   width: 920px;
+   margin: 0px 0px 0px 0px;
+   padding: 5px;
+   font: 14px Arial;
+   float: left;
+   }
+
+
+.intr_dnl3dBlock a, .intr_dnl3dBlock a:visited
+   {
+   color: red;
+   text-decoration: none;
+   font: 14px Arial;
+   font-weight: bold;
+   }
+
+.intr_dnljpgBlock a, .intr_dnljpgBlock a:visited
+   {
+   color: red;
+   text-decoration: none;
+   font: 14px Arial;
+   font-weight: bold;
+   margin: 0px 0px 0px 3px;
+   }
+
+
+.intr_NavPrev {
+   width: 41px;
+   height: 50px;
+   position: absolute;
+   top: 490px;
+   right: 50px;
+   background: url("") no-repeat;
+   background-size: auto 50px;
+   cursor: pointer;
+   font: 9px arial;
+}
+
+.intr_NavNext {
+   width: 41px;
+   height: 50px;
+   position: absolute;
+   top: 490px;
+   right: 10px;
+   background: url("") no-repeat;
+   background-size: auto 50px;
+   cursor: pointer;
+   font: 9px arial;
+}
+
+
+/*================================ Справочник ======================== */
+.spravContainer {
+   width: 940px;
+   margin: 10px 0px 20px 0px;
+   min-height: 600px;
+   position: relative;
+   float: left;
+}
+
+
+
+/*================================ Как заказать ======================== */
+
+.wtbContainer {
+   position: relative;
+   float: none;
+   width: 100%;
+   text-align: justify;
+   min-height: 400px;
+   margin: 0px 0px 50px 0px;
+}
+
+.wtbBlock {
+   width: 675px;
+   height: 170px;
+   background-color: #e1e1e1;
+   position: relative;
+   float: none;
+   margin: 25px auto;
+}
+
+.wtbImgContainer {
+   width: 140px;
+   height: 140px;
+   position: relative;
+   float: left;
+   margin: 15px 15px 15px 15px;
+}
+
+.wtbImgContainer img{
+   width: 100%;
+   height: 100%;
+}
+
+.wtbTxtContainer {
+   width: 490px;
+   height: 140px;
+   position: relative;
+   float: left;
+   margin: 15px 0px 15px 0px;
+   background-color: #e1e1e1;
+}
+
+.wtbTxtHeader {
+   position: relative;
+   float: left;
+   background-color: #b9622c;
+   width: 465px;
+   height: 20px;
+   color: #fff;
+   font: 20px trebuchet ms;
+   letter-spacing: 1px;
+   padding: 7px 10px 10px 10px;
+   margin: 0px 0px 15px 0px;
+    -moz-box-shadow: 1px 1px 1px #000000;
+    -webkit-box-shadow: 1px 1px 1px #000000;
+    box-shadow: 1px 1px 1px #000000;
+}
+
+.wtbTxtContainer p {
+   text-indent: 0px;
+   color: #4d4d4d;
+   font: 16px trebuchet ms;
+   letter-spacing: 1px;
+   line-height: 1.1;
+}
+
+.stepsHeader {
+   position: relative;
+   float: left;
+   width: 600px;
+   height: 100px;
+   margin: 5px 0px -10px 7px;
+   background: transparent;
+   padding: 0px;
+}
+
+.stepsHeaderImg {
+   height: 83px;
+   width: 83px;
+   position: relative;
+   float: left;
+   margin: 1px 5px 1px 1px;
+}
+
+.stepsHeaderImg img{
+   height: 100%;
+   width: 100%;
+}
+
+.stepsHeaderHdr {
+   width: 500px;
+   height: 85px;
+   background-color: #8a79b5;
+   position: relative;
+   float: left;
+}
+
+.stepsHeaderHdr h1 {
+   font-family: Trebuchet MS;
+   font-size: 24px;
+   color: #fff;
+   text-transform: none;
+   background: transparent;
+   text-align: left;
+   margin-left: 15px;
+}
